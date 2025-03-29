@@ -9,6 +9,9 @@ from src.custom_exception import CustomException
 import mlflow
 import mlflow.sklearn
 
+import dagshub
+dagshub.init(repo_owner='nithin-k-mundrathi', repo_name='testing', mlflow=True)
+
 logger = get_logger(__name__)
 
 class ModelTraining:
